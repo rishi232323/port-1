@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <title>Portfolio Website</title>
+    <style>
+        /* Basic Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            padding: 10px 20px;
+            color: #fff;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        header a.logo {
+            font-size: 24px;
+            text-transform: uppercase;
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 20px;
+            text-transform: uppercase;
+        }
+
+        nav a.active,
+        nav a:hover {
+            background-color: #555;
+            border-radius: 5px;
+        }
+
+        .home {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 50px 20px;
+            background-color: #fff;
+        }
+
+        .home-img img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .home-content {
+            max-width: 600px;
+            text-align: center;
+            margin-left: 20px;
+        }
+
+        .home-content h1 {
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+
+        .home-content h1 span {
+            color: #007bff;
+        }
+
+        .home-content p {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+        .social-icons {
+            margin-bottom: 20px;
+        }
+
+        .social-icons a {
+            color: #333;
+            font-size: 24px;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+
+        .btn {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        /* Education Section */
+        .education {
+            background-color: #fff;
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        .education h2 {
+            font-size: 30px;
+            margin-bottom: 30px;
+        }
+
+        .education .edu-item {
+            max-width: 600px;
+            margin: 0 auto;
+            margin-bottom: 30px;
+        }
+
+        .education .edu-item h3 {
+            font-size: 24px;
+            color: #007bff;
+        }
+
+        .education .edu-item p {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            .home {
+                flex-direction: column;
+            }
+
+            .home-content {
+                margin-left: 0;
+            }
+        }
+
+        @media (max-width: 480px) {
+            header {
+                padding: 10px;
+            }
+
+            header a.logo {
+                font-size: 20px;
+            }
+
+            nav a {
+                padding: 8px 10px;
+            }
+
+            .home-content h1 {
+                font-size: 28px;
+            }
+
+            .home-content p {
+                font-size: 16px;
+            }
+
+            .education h2 {
+                font-size: 24px;
+            }
+
+            .education .edu-item h3 {
+                font-size: 20px;
+            }
+
+            .education .edu-item p {
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <a href="#" class="logo">PORTFOLIO</a>
+        <nav>
+            <a href="#" class="active">Home</a>
+            <a href="Services.html">Services</a>
+            <a href="Skill.html">Skills</a>
+            <a href="Education.html">Education</a>
+            <a href="#">Experience</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+
+    <section class="home">
+        <div class="home-img">
+            <img src="main1.jpg" alt="Rishi Raj">
+        </div>
+        <div class="home-content">
+            <h1>Hi, It's <span>Rishi Raj</span></h1>
+            <h3 class="typing-text">I'm a <span></span></h3>
+            <p>Hello! I'm Rishi Raj, a passionate and dedicated professional with a keen interest in technology and innovation. I specialize in [Your Field or Specialty], and I thrive on solving complex problems and creating impactful solutions. With a solid foundation in [Key Skills or Technologies], I am committed to continuous learning and growth. My goal is to leverage my skills and experiences to contribute to exciting projects and make a meaningful difference. Feel free to explore my portfolio and reach out if you'd like to connect!</p>
+            <div class="social-icons">
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/rishi232323"><i class="fa-brands fa-github"></i></a>
+                <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="https://www.instagram.com/rishi_sengar_23?igsh=enczZmptbndzMGN1"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+            <a href="#" class="btn">Hire me</a>
+        </div>
+    </section>
+
+    <section class="education">
+        <h2>Education</h2>
+        <div class="edu-item">
+            <h3>Secondary School</h3>
+            <p>Completed my secondary education with a focus on science and mathematics, achieving excellent grades.</p>
+        </div>
+        <div class="edu-item">
+            <h3>Intermediate</h3>
+            <p>Pursued intermediate education with a specialization in science, excelling in physics, chemistry, and mathematics.</p>
+        </div>
+        <div class="edu-item">
+            <h3>Graduation</h3>
+            <p>Graduated with a Bachelor's degree in [Your Major], acquiring deep knowledge in [Relevant Subjects] and participating in various projects.</p>
+        </div>
+    </section>
+</body>
+
+</html>
